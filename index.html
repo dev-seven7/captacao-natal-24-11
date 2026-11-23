@@ -124,6 +124,7 @@
     <div class="take-n">Takes: T8, T9</div></div>
 
   <h3>🍔 Ogro · Ogro Bells</h3>
+  <p class="nota">O roteiro do Victor (na lista de takes) vem primeiro. As trends abaixo são opcionais, se der tempo.</p>
   <div class="card ogro trend"><div class="t">1. 🎵 ASMR de montagem no "Geme Baixo"</div>
     <div class="como">Áudio subindo forte. Montagem do Ogro Bells com o queijo derretendo cravado na batida. É o vídeo de lançamento.</div>
     <div class="take-n">Takes: O3, O4</div></div>
@@ -152,7 +153,14 @@
 
   <h3>🍣 Temakeria · SushiTone</h3>
   <div class="card tmk" id="tmk"></div>
-  <h3>🍔 Ogro · Ogro Bells</h3>
+  <h3>🍔 Ogro · roteiro do Victor (Black + Ogro Bells)</h3>
+  <div class="card ogro">
+    <b>Ordem do dia:</b> 1) Black de manhã (~1h), porque o Reels 1 sai amanhã às 18h30 · 2) Ogro Bells (~2h30) · 3) extras, se sobrar tempo.<br>
+    <b>Equipe:</b> o Otávio grava, o Igor fica na chapa, com 3 pessoas da cozinha. O Jimmy não vai, então os conteúdos com ele ficam pra outro dia.<br>
+    <b>Levar:</b> fita crepe, caneta e etiqueta de preço · carimbo vermelho com o preço · caixa escrita “ABRIR SÓ NA SEXTA” · kraft + P.C.Q igual à foto oficial · abafador de inox, sininho dourado na sacola, fumaça · Ogro Bells pronto (receita final).<br>
+    <span style="color:var(--hot)"><b>⚠️ Nos takes de mistério não aparece burger, nome nem ingrediente.</b> O material da revelação fica numa pasta fechada até 09/12.</span><br>
+    Checklist completo: <a class="ref" href="https://github.com/dev-seven7/cs-ogro-steaks/issues/53" target="_blank" rel="noopener">cs-ogro-steaks#53</a>
+  </div>
   <div class="card ogro" id="ogro"></div>
   <h3>📦 Banco extra (se sobrar tempo)</h3>
   <div class="card" id="extra"></div>
@@ -184,21 +192,22 @@ const T={
   ["T9","Pedido saindo pra entrega à noite (luz baixa)","vídeo","Story de fim de dia: pedidos até 23h"],
  ],
  ogro:[
-  ["O1","Bancada vazia, mesmo enquadramento do O2 (tripé travado)","vídeo","Trend antes e depois"],
-  ["O2","Ogro Bells montado na mesa, mesmo enquadramento","vídeo","Trend antes e depois"],
-  ["O3","Montagem completa em ASMR: pão, carne na chapa, queijo derretendo, fechamento","vídeo","Trend 1 e 3 · som de chapa alto"],
-  ["O4","Queijo escorrendo / cheese pull em câmera lenta","vídeo","Trend 1 · o take principal"],
-  ["O5","Mordida honesta em close, de perfil, luz lateral quente","vídeo","Trend 2 e 3"],
-  ["O6","Mão puxando o Ogro Bells da embalagem","vídeo","Trend 2"],
-  ["O7","Cortes rápidos de 1 a 2s: faca, chapa, sal, espátula","vídeo","Trend 3 · banco pra variações"],
-  ["O8","Hero do Ogro Bells em foto: 45°, f/1.8 a f/2.8, foco no queijo","foto","Duas versões: limpa (pra IA) e com objeto de Natal real"],
-  ["O9","Ogro Bells + batata + bebida (combo) em foto","foto","Também serve pro cardápio digital de 04/12"],
+  ["B1","Black · fita crepe “SEXTA” + Igor colando de volta","vídeo","Reels 1 (sai ter 24/11 18h30): é o PRIMEIRO take da manhã"],
+  ["B2","Black · 2ª fita “AINDA NÃO”","vídeo","Story de qua 25/11"],
+  ["B3","Black · caixa “ABRIR SÓ NA SEXTA”, carimbo e gaveta trancada","vídeo","Reels 2 (qui 26/11)"],
+  ["B4","Black · carimbo revelando o preço + bastidor + 4 carimbadas","vídeo","Mix de sex 27/11"],
+  ["B5","Black · som do carimbo gravado sozinho","som","Pra edição"],
+  ["O1","Ogro Bells · abafador com fumaça","vídeo","Mistério (30/11)"],
+  ["O2","Ogro Bells · mão que desiste + sininho na sacola","vídeo","06/12"],
+  ["O3","Ogro Bells · Jingle Bells na espátula + abafador tremendo","vídeo","08/12"],
+  ["O4","Ogro Bells · equipe em close + montagem do zero + plano sem corte com o chapeiro dizendo o nome","vídeo","Revelação (09/12)"],
+  ["O5","Ogro Bells · shooting com 6 fotos oficiais","foto","Revelação (09/12)"],
+  ["O6","Se sobrar tempo · 3 TikToks de chapa","vídeo","02, 06 e 07/12"],
+  ["O7","Se sobrar tempo · sacola e McManis do manifesto","vídeo","02/12"],
  ],
  extra:[
   ["E1","Temakeria: story de almoço pronto (prato saindo, 11h-12h)","vídeo","Rotina de stories"],
-  ["E2","Ogro: P.C.Q. em close pra Black Friday (só cardápio próprio)","foto+vídeo","Peças da Black Friday"],
   ["E3","Equipe de cozinha rindo e trabalhando, bastidor humano","vídeo","Conteúdos pela pirâmide de Maslow (pertencimento)"],
-  ["E4","Ogro: combos de SG pro funil e pro cardápio digital","foto","Victor puxa a lista"],
  ]};
 const K='cap-natal-2411'; let st={}; try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
